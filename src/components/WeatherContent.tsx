@@ -8,6 +8,7 @@ import CityInput from './CityInput';
 import ORdivider from './ORdivider';
 import LatAndLong from './LatAndLong';
 import GetWeatherButton from './GetWeatherButton';
+import GetLocationButton from './GetLocationButton';
 import ErrorMessage from './ErrorMessage';
 import { WeatherData } from '@/weather';
 
@@ -134,6 +135,12 @@ export default function WeatherContent() {
 							}}
 							disabled={isLoading || isLocationLoading}
 							isLoading={isLoading}
+						/>
+						<GetLocationButton
+							onClick={handleLocationClick}
+							disabled={isLoading || isLocationLoading}
+							isLoading={isLocationLoading}
+							setLocationLoading={setIsLocationLoading}
 						/>
 					</div>
 				</div>
