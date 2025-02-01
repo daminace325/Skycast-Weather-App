@@ -7,7 +7,7 @@ export default function GetWeatherButton() {
 				disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200
 				font-medium flex items-center justify-center gap-2"
 		>
-				'Get Weather'
+				Get Weather
 		</button>
 	);
 };
