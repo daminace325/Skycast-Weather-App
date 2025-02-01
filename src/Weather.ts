@@ -8,4 +8,4 @@ export type WeatherData = {
     country: string;
     timestamp: number;
     feelsLike: number;
-} 
+}
