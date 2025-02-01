@@ -1,27 +1,41 @@
 {
-  "name": "skycast",
+  "name": "floworks-weather-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "@types/lodash": "^4.17.15",
     "lodash": "^4.17.21",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-spinner": "^0.2.7",
     "react-spinners": "^0.15.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.15",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "node-mocks-http": "^1.16.2",
     "postcss": "^8",
+    "supertest": "^6.3.4",
     "tailwindcss": "^3.4.1",
+    "ts-jest": "^29.1.2",
     "typescript": "^5"
   }
 }
