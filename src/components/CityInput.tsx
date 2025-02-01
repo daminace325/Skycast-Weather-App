@@ -46,9 +46,10 @@ export default function CityInput({
         try {
             const response = await fetch(`/api/cities?q=${encodeURIComponent(query)}`);
             const data = await response.json();
-            setSuggestions(data.suggestions);
+            setSuggestions(data?.suggestions || []);
         } catch (error) {
             console.error('Error fetching suggestions:', error);
+            setSuggestions([]);
         } finally {
             setIsLoading(false);
         }
@@ -84,7 +85,7 @@ export default function CityInput({
                     transition-all duration-200 text-gray-700 placeholder-gray-400"
             />
             
-            {showSuggestions && (suggestions.length > 0 || isLoading) && (
+            {showSuggestions && suggestions && (suggestions.length > 0 || isLoading) && (
                 <div className="absolute z-10 w-full mt-1 bg-white rounded-xl shadow-lg border border-gray-200 max-h-52 overflow-auto">
                     {isLoading ? (
                         <div className='flex justify-center items-center h-full my-2'>
