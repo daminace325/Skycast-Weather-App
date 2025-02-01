@@ -1,6 +1,6 @@
 # Skycast, a WeatherApp Assignment Submission for Floworks
 
-> - View the assignment Hosted on Vercel : [visit Vercel Link](https://skycast-weather-app-phi.vercel.app)
+> - View the assignment Hosted on Vercel : [visit Vercel Link](https://skycast-weather-app-delta.vercel.app/)
 > - GitHub Repository Link : [Open GitHub Repository](https://github.com/daminace325/Skycast-Weather-App)
 
 ## Installation and Run Application
