@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { WeatherData } from '@/weather';
+import { WeatherData } from '@/types/weather';
 
 export default function Weather({
 	temperature,

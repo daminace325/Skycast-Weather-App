@@ -10,7 +10,7 @@ import LatAndLong from './LatAndLong';
 import GetWeatherButton from './GetWeatherButton';
 import GetLocationButton from './GetLocationButton';
 import ErrorMessage from './ErrorMessage';
-import { WeatherData } from '@/weather';
+import { WeatherData } from '@/types/weather';
 
 
 const Weather = lazy(() => import('./Weather'));
